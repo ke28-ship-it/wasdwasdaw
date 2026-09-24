@@ -9,12 +9,17 @@ public class LemonadeStand{
 	int[] using = new int[3];
 	String[] names = {"Lemons","Sugar","Ice","Cups"};
 	
-	Scanner Lemonadejjajaja = new Scanner(System.in);
+	Scanner lemonscan = new Scanner(System.in);
+	
+	public void setup() {
+			System.out.println("Welcome");
+			//instructions
+	}
 	
 	public void buy(){
 		for(int i = 1; i <= 4; i++){
 			System.out.println("How many " + names[i-1] + " do you want?");
-			Number ald = Lemonadejjajaja.nextDouble();
+			Number ald = lemonscan.nextDouble();
 		}
 	}
 }
